@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo{
+    display: block;
+    font-size: 60px;
+    margin: 20px;
+}
+
+
+
+
+.lua{
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: transparent;
+}
+
+.lua:hover{
+    background-color: black;
+    border-radius: 50%;
+}
+
+.sol{
+    width: 50px;
+    height: 50px;
+}
+
+.sol:hover{
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+.btn1{
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.btn2{
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+
+.container{
+   display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    height: 100%;
+    background-color: #272b33;
+}
+
+.card{
+    position: relative;
+    width: 250px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.897);
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-left: 45px;
+    z-index: 2;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    transition: all 0.4s;
+    box-shadow: 0 0 20px rgb(8, 255, 28);
+}
+
+.card>img{
+    width: 230px;
+    display: block;
+}
